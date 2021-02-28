@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
             String miAlumnoStr;
 
             miAlumno.Nombre = aluNombre.Text;
-            miAlumno.Nota = Convert.ToInt32(aluNota.Text);
+            miAlumno.Nota = Convert.ToInt32(aluNota.Value);
             miAlumnoStr = aluNombre.Text + " " + aluNota.Text + (miAlumno.Aprobado ? " Aprobado" : " Suspenso") + "\n";
             listaAlumnos.AppendText(miAlumnoStr);
             misAlumnos.Agregar(miAlumno);
